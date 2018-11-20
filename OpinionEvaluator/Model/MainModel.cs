@@ -14,7 +14,7 @@ namespace OpinionEvaluator.Model
 
         public int SliderValue { get; set; }
         public string SliderMessage { get; set; }
-        public int NewOpinion { get; set; }
+        public string NewOpinion { get; set; }
 
         public MainModel()
         { }

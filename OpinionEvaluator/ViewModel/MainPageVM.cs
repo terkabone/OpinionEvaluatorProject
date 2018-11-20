@@ -19,35 +19,31 @@ namespace OpinionEvaluator.ViewModel
         public RelayCommandVM AddNewOpinionCommand { get; set; }
         public RelayCommandVM GoToEvaluatePageCommand { get; set; }
 
-        private int _sliderValue;
-        private string _sliderMessage;
-        private string _newOpinion;
-
         public int SliderValue
         {
-            get => _sliderValue;
-            set { _sliderValue = value; OnPropertyChanged("SliderValue"); }
+            get => TheModel.SliderValue;
+            set { TheModel.SliderValue = value; OnPropertyChanged("SliderValue"); }
         }
 
         public string SliderMessage
         {
-            get => _sliderMessage;
+            get => TheModel.SliderMessage;
             set
             {
-                if (_sliderValue >= 40)
-                { _sliderMessage = "That's not that bad :)"; }
-                else if (_sliderValue >= 80)
-                { _sliderMessage = "OK that's kinda bad..."; }
+                if (TheModel.SliderValue >= 40)
+                { TheModel.SliderMessage = "That's not that bad :)"; }
+                else if (TheModel.SliderValue >= 80)
+                { TheModel.SliderMessage = "OK that's kinda bad..."; }
                 else
-                { _sliderMessage = "Shit, you're fucked up!";  }
+                { TheModel.SliderMessage = "Shit, you're fucked up!";  }
                 OnPropertyChanged("SliderValue");
             }
         }
 
         public string NewOpinion
         {
-            get => _newOpinion;
-            set { _newOpinion = value; OnPropertyChanged("NewOpinion"); }
+            get => TheModel.NewOpinion;
+            set { TheModel.NewOpinion = value; OnPropertyChanged("NewOpinion"); }
         }
 
         public ObservableCollection<string> OpinionList { get; set; }
