@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using OpinionEvaluator.Model;
 using OpinionEvaluator.ViewModel;
+using OpinionEvaluator.View;
 
 namespace OpinionEvaluator.ViewModel
 {
-    class MainPageVM : PropertyChangedVM
+    public  class MainPageVM : PropertyChangedVM
     {
         private readonly PageNavigate _frameNavigate;
         public MainModel TheModel;
@@ -54,7 +55,6 @@ namespace OpinionEvaluator.ViewModel
         public void AddNewOpinion()
         {
             OpinionList.Add(NewOpinion);
-            // OpinionList.Add(_newOpinion);
         }
 
         public void GoToEvaluatePage()
@@ -72,7 +72,7 @@ namespace OpinionEvaluator.ViewModel
             AddNewOpinionCommand = new RelayCommandVM(AddNewOpinion);
             GoToEvaluatePageCommand = new RelayCommandVM(GoToEvaluatePage);
             _frameNavigate = new PageNavigate();
-
+            SliderValue = 12;
             OpinionList = new ObservableCollection<string>
             {
                 "I like it.",

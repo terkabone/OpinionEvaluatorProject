@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OpinionEvaluator.ViewModel
 {
-    class PropertyChangedVM : INotifyPropertyChanged
+    public class PropertyChangedVM : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

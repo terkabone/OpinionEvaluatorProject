@@ -9,7 +9,7 @@ using Windows.UI.Xaml.Controls;
 namespace OpinionEvaluator.Model
 {
     // How to enable navigation between Pages A---->B in the ViewModel
-    class PageNavigate
+    public class PageNavigate
     {
         public void ActivateFrameNavigation(Type type)
         {

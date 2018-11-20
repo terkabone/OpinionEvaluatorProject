@@ -21,7 +21,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.DataContext>
-            vm:MainPageVM
+            <vm:MainPageVM/>
         </Grid.DataContext>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" >

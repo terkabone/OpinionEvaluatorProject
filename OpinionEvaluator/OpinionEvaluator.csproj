@@ -100,6 +100,9 @@
     <Compile Include="ViewModel\MainPageVM.cs" />
     <Compile Include="ViewModel\PropertyChangedVM.cs" />
     <Compile Include="ViewModel\RelayCommandVM.cs" />
+    <Compile Include="View\EvaluatePage.xaml.cs">
+      <DependentUpon>EvaluatePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

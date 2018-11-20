@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OpinionEvaluator.Model
 {
-    class MainModel
+    public class MainModel
     {
         private int _sliderValue;
         private string _sliderMessage;
