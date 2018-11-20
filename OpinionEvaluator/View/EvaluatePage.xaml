@@ -5,6 +5,7 @@
     xmlns:local="using:OpinionEvaluator.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:OpinionEvaluator.ViewModel"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -20,7 +21,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.DataContext>
-            vm:MainPageVM
+            <vm:MainPageVM />
         </Grid.DataContext>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" >

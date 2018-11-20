@@ -12,9 +12,9 @@ namespace OpinionEvaluator.Model
         private string _sliderMessage;
         private string _newOpinion;
 
-        public int SliderValue { get; set; }
-        public string SliderMessage { get; set; }
-        public string NewOpinion { get; set; }
+        public int SliderValue { get => _sliderValue; set => _sliderValue = value; }
+        public string SliderMessage { get => _sliderMessage; set => _sliderMessage = value; }
+        public string NewOpinion { get => _newOpinion; set => _newOpinion = value; }
 
         public MainModel()
         { }

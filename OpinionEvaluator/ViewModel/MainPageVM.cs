@@ -68,7 +68,8 @@ namespace OpinionEvaluator.ViewModel
             AddNewOpinionCommand = new RelayCommandVM(AddNewOpinion);
             GoToEvaluatePageCommand = new RelayCommandVM(GoToEvaluatePage);
             _frameNavigate = new PageNavigate();
-            SliderValue = 12;
+            SliderValue = 50;
+            NewOpinion = "Sample opinion";
             OpinionList = new ObservableCollection<string>
             {
                 "I like it.",
